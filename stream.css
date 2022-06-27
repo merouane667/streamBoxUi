@@ -210,7 +210,7 @@ header article nav{
     padding: 0 30px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     background: var(--color-3);
 }
 header article nav .search{
@@ -311,10 +311,23 @@ header article section  .chatSection {
     grid-column: 3/4;
     
 }
+header article section  .chatSection #donating{
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    background: var(--color-6);
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+}
 header article section .streamerSection .card{
     margin-bottom: 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     cursor: pointer;
     height: 100%;
@@ -322,6 +335,7 @@ header article section .streamerSection .card{
 header article section .streamerSection .card .img_profile{
     width: 40px;
     height: 40px;
+    margin-left: 15px;
     position: relative;
 }
 header article section .streamerSection .card img{
@@ -413,14 +427,14 @@ header article section .chatSection .sendmsg{
     align-items: center;
 }
 header article section .chatSection .sendmsg .sendmsgInput{
-    width: 70%;
+    width: 80%;
     background: var(--color-1);
     padding: 4px 10px;
 }
 header article section .chatSection .sendmsg .sendmsgInput i{
     margin-bottom: 6px;
     display: inline-block;
-    margin-left: 30px
+    margin-left: 40px
 }
 
 header article section .chatSection .sendmsg input{
@@ -473,4 +487,174 @@ header article section .chatSection .chatBox .cardMessage .content{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+@media only screen and (min-width:0px) and (max-width:1207px){
+    header article section .chatSection .sendmsg .sendmsgInput {
+        width: 86%;
+    }
+}
+@media only screen and (min-width:0px) and (max-width:1146px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    header article section .chatSection .sendmsg .sendmsgInput {
+        width: 75%;
+        max-width: 300px;
+        min-width: 285px;
+    }
+    aside{
+        display: none;
+    }
+    header{
+        width: 100vw;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    header aside,article{
+        width: 100%;
+        height: 100%;
+    }
+    header article nav{
+        width: 85%;
+    }
+    header article section{
+        height: 65%;
+    }
+    header article nav .search input {
+        width: 80%;
+    }
+    header article nav .search {
+        width: 55%;
+    }
+    header article section .channels_bx {
+        width: 100%;
+        height: 100%;
+    }
+    header article section .channels_bx .card {
+        width: 40%;
+        height: 140px;
+    }
+}
+
+@media only screen and (min-width:800px) and (max-width:1146px){
+    header article nav{
+        width: 100%;
+    }
+    header article nav .search {
+        width: 30%;
+    }
+    header article section .channels_bx .card {
+        width: 30%;
+        height: 140px;
+    }
+
+}
+@media only screen and (min-width:450px) and (max-width:800px){
+    header article nav .search {
+        width: 38%;
+    }
+    header article section .channels_bx .card {
+        width: 20%;
+        height: 140px;
+    }
+}
+
+@media only screen and (min-width:500px) and (max-width:800px){
+    header article nav{
+        width: 90%;
+    }
+}
+@media only screen and (min-width:800px) and (max-width:1000px){
+    body{
+        overflow: auto;
+    }
+    header article section{
+        height: 63.8%;
+    }
+}
+@media only screen and (min-width:1000px) and (max-width:1146px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    aside{
+        display: none;
+    }
+    header{
+        width: 100vw;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    header aside,article{
+        width: 100%;
+        height: 100%;
+    }
+    header article nav{
+        width: 100%;
+    }
+    header article nav .search input {
+        width: 80%;
+    }
+    header article nav .search {
+        width: 30%;
+    }
+    header article section .channels_bx {
+        width: 100%;
+        height: 100%;
+    }
+    header article section .channels_bx .card {
+        width: 23%;
+        height: 190px;
+    }
+}
+@media only screen and (min-width:0px) and (max-width:340px){
+    header article nav .search {
+        width: 60%;
+    }
+    header article nav .right_bx p {
+        font-size: 12px;
+    }
+
+}
+@media only screen and (min-width:0px) and (max-width:750px){
+    header article section {
+        height: 50%;
+    }
+    header article section {
+        margin-top: 10px;
+        width: 100%;
+        height: 80vh;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+    header article section .videoPlayer {
+        grid-row: 1/4;
+        grid-column: 1/5;
+    }
+    header article section .streamerSection {
+        grid-row: 4/5;
+        grid-column: 1/5;
+    }
+    header article section .chatSection {
+        grid-row: 5/8;
+        grid-column: 1/5;
+    }
+    header article section .chatSection .chatBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    header article section .chatSection .sendmsg .sendmsgInput {
+        margin-top: 60px;
+    }
+    header article section .videoPlayer::after {
+        display: none;
+    }
 }

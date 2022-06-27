@@ -30,83 +30,16 @@
             </ul>
             <!-- subscriptions box -->
             <div class="subscriptions">
-                <h5>Subscriptions</h5>
-                <div class="cards">
-                    <div class="card">
-                        <div class="img_profile">
-                            <img src="./images/userProfileImage/1.jpg" alt="">
-                        </div>
-                        <div class="content">
-                            <h6>Allie Baker</h6>
-                            <p>GTA V</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="img_profile">
-                            <img src="./images/userProfileImage/2.jpg" alt="">
-                        </div>
-                        <div class="content">
-                            <h6>Pitar Sarte</h6>
-                            <p>PUBG</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="img_profile">
-                            <img src="./images/userProfileImage/3.jpg" alt="">
-                        </div>
-                        <div class="content">
-                            <h6>Samoran Alen</h6>
-                            <p>VALORANT</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="img_profile">
-                            <img src="./images/userProfileImage/7.jpg" alt="">
-                        </div>
-                        <div class="content">
-                            <h6>Jahid Khan </h6>
-                            <p>FORTNITE</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="img_profile">
-                            <img src="./images/userProfileImage/6.jpg" alt="">
-                        </div>
-                        <div class="content">
-                            <h6>Lorem, ipsum dolor.</h6>
-                            <p>FORTNITE</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="img_profile">
-                            <img src="./images/userProfileImage/5.jpg" alt="">
-                        </div>
-                        <div class="content">
-                            <h6>Lorem, ipsum.</h6>
-                            <p>FIFA 22</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="img_profile">
-                            <img src="./images/userProfileImage/4.jpg" alt="">
-                        </div>
-                        <div class="content">
-                            <h6>Lorem, ipsum.</h6>
-                            <p>FIFA 22</p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </aside>
         <article>
             <nav>
-                <div class="search">
-                    <input type="text" placeholder="Search...">
-                    <i class="bi bi-search"></i>
+                <div class="icon">
+                    <a href="./index.html"><img src="./images/iconeLogo.png" alt=""></a>
                 </div>
                 <div class="right_bx">
-                    <a href="#" title="your profile">
-                        <p class="username">merouane <img src="./images/userProfileImage/8.jpg" alt=""></p>
+                    <a href="./profile.html" title="your profile">
+                        <p class="username"></p>
                     </a>
                     <a href="#" class="logout" title="logout">
                         <i class="bi bi-box-arrow-left"></i>
@@ -115,21 +48,25 @@
             </nav>
             <div class="profileCover">
                 <div class="cover">
-                    <img src="./images/gamecover1.jpg" alt="">
                 </div>
                 <div class="profileImage">
-                    <img src="./images/userProfileImage/8.jpg" alt="">
                 </div>
             </div>
             <div class="profileName">
-                <h6>merouane <i class="bi bi-patch-check"></i></h6>
             </div>
             <div class="followBtn">
-                <button>follow</button>
+                <button id="followBtn">follow</button>
+            </div>
+            <!-- manage profile -->
+            <div class="manageProfile">
+                <a href="./edit.html" id="edit">Edit profile</a>
+                <a href="#"><span class="numberOfFollowing"></span> Following </a>
+                <a href="#"><span class="numberOfFollowers"></span> Followers </a>
             </div>
         </article>
 
         </div>
     </header>
+    <script src="profile.js"></script>
 </body>
     

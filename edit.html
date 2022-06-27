@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="icon" type="image/x-icon" href="/images/iconeLogo.png">
     <title>Streaming Box | Live Game Streaming Website</title>
-    <link rel="stylesheet" href="stream.css">
+    <link rel="stylesheet" href="edit.css">
 </head>
 <body>
     <header>
@@ -30,47 +30,47 @@
             </ul>
             <!-- subscriptions box -->
             <div class="subscriptions">
-   
             </div>
         </aside>
         <article>
             <nav>
+                <div class="icon">
+                    <a href="./index.html"><img src="./images/iconeLogo.png" alt=""></a>
+                </div>
                 <div class="right_bx">
                     <a href="./profile.html" title="your profile">
-                        <p class="username">merouane <img src="./images/userProfileImage/8.jpg" alt=""></p>
+                        <p class="username"><span class="usrname"></span> <img src="" alt=""></p>
                     </a>
                     <a href="#" class="logout" title="logout">
                         <i class="bi bi-box-arrow-left"></i>
                     </a>
                 </div>
             </nav>
-            <section>
-                <div class="videoPlayer">
-                      <iframe width="100%" height="100%" src="http://192.168.9.143:5080/LiveApp/play.html?name=7777" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="streamerSection">
-                    <div class="card">
-                        <div class="imgAndContent">
-                            <div class="img_profile">
-                                <img src="./images/userProfileImage/4.jpg" alt="">
-                            </div>
-                            <div class="content">
-                                <h6>Lorem, ipsum.</h6>
-                                <p>FIFA 22</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="chatSection">
-                    <div class="sendmsg">
-                        <a href="./donation.html" id="donating">Support Us</a>
-                    </div>
-                </div>
 
-            </section>
+            <div class="file-upload">
+                <form action="" class="edit-profile">
+                    <div class="file-upload-select-image">
+                        <div class="file-select-button-image" >Choose File</div>
+                    <div class="file-select-name-image">Profile Image...</div> 
+                    <input type="file" name="file-upload-input-image" id="file-upload-input-image" class="profile_image_input_image">
+                    </div>
+                    <div class="file-upload-select-cover">
+                        <div class="file-select-button-cover" >Choose File</div>
+                    <div class="file-select-name-cover">Profile Cover...</div> 
+                    <input type="file" name="file-upload-input-cover" id="file-upload-input-cover" class="profile_cover_input_cover">
+                    </div>
+                    <input type="submit" value="Save" id="send" class="send"/>
+                </form>
+            </div>
+
+            
         </article>
 
+
+        
+          </section>
+        </div>
     </header>
-    <script src="./stream.js"></script>
+    <script src="./edit.js"></script>
 </body>
-</html>
+    

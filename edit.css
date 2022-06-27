@@ -41,7 +41,7 @@ header aside,article{
     background: var(--color-3);
 }
 header aside {
-    width: 18%;
+    width: 15%;
     border-radius: 10px 0 0 10px;
     background: var(--color-6);
 }
@@ -224,7 +224,7 @@ header article nav{
     background: var(--color-3);
 }
 header article nav .search{
-    width: 40%;
+    width: 42%;
     background: var(--color-1);
     padding: 4px 10px;
     transition: .5s linear;
@@ -282,169 +282,177 @@ header article nav .right_bx .logout{
     display: inline-block;
     margin-bottom: 8px;
 }
-
-header article .streams{
-    position: relative;
+header article .profileCover{
     width: 100%;
-    height: 200px;
-    padding: 0 30px;
+    height: 40%;
     margin-top: 20px;
-}
-header article .streams h3{
-    color: var(--color-2);
-    font-size: 14px;
-    font-weight: 600;
-    transition: .5s linear;
-}
-header article .streams .live_bx {
-    width: 100%;
-    height: 175px;
-    display: flex;
-    align-items: center;
-    overflow: auto;
-    scroll-behavior: smooth;
-}
-header article .streams .live_bx::-webkit-scrollbar{
-    height: 10px;
-    background: rgb(184,184,184,.2);
-    border-radius: 20px;
-}
-header article .streams .live_bx::-webkit-scrollbar-thumb{
-    background: rgb(184,184,184,.7);
-    border-radius: 20px;
-}
-header article .streams .live_bx .card{
-    min-width: 230px;
-    height: 150px;
-    border-radius: 10px;
-    margin-right: 20px;
-    position: relative;
-}
-header article .streams .live_bx .card:nth-last-child(1) {
-    margin-right: 0px;
-}
-header article .streams .live_bx .card img{
-    width: 100%;
-    height: 75%;
-    border-radius: 5px;
-}
-header article .streams .live_bx .card::after{
-    position: absolute;
-    content: "Live";
-    width: 50px;
-    height: 20px;
-    color: #fff;
-    background-color: var(--color-6);
-    right: 5px;
-    top: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
-}
-header article .streams .live_bx .card .whoIsStreaming{
-    width: 100%;
-    height: 20%;
-    display: flex;
-    align-items: center;
     position: relative;
+    
 }
-header article .streams .live_bx .card .whoIsStreaming .img_profile{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-}
-header article .streams .live_bx .card .whoIsStreaming img{
-    width: 100%;
+header article .profileCover .cover{
     height: 100%;
-    border-radius: 50%;
+    width: 70%;
+    border-radius: 30px;
+    box-shadow: 0 0 30px rgb(20,19,19);
 }
-header article .streams .live_bx .card .whoIsStreaming .img_profile::before{
-    content: "";
+header article .profileCover .cover img{
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+}
+header article .profileImage{
     position: absolute;
-    width: 6px;
-    height: 6px;
-    background: greenyellow;
+    top: 165px;
+}
+header article .profileImage img{
+    width: 100px;
+    height: 100px;
+    border: 6px solid var(--color-3);
     border-radius: 50%;
-    border: 3px solid var(--color-3);
-    top: 11px;
-    left: 23px;
 }
-header article .streams .live_bx .card .whoIsStreaming .content h6{
-    width: 100px;
-    color: #fff;
-    font-size: 12px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    margin-left: 5px;
-
-}
-header article .streams .live_bx .card .whoIsStreaming .content p{
-    font-size: 10px;
-    margin-left: 5px;
-    color: var(--color-2);
-}
-header article .streams .live_bx .card .whoIsStreaming .content p span{
-    margin-left: 50px;
-}
-header article section{
-    width: 100%;
-    height: 52.8%;
-    padding: 0 30px;
-}
-header article section h3{
-    color: var(--color-2);
-    font-size: 14px;
-    font-weight: 600;
-}
-header article section .channels_bx {
-    width: 100%;
-    height: 85%;
-    padding-top: 10px;
+header article .profileName{
     display: flex;
-    flex-wrap: wrap;
-    overflow: auto;
     justify-content: center;
+    margin-top: 50px;
 }
-
-header article section .channels_bx::-webkit-scrollbar{
-    width: 10px;
-    background: rgb(184,184,184,.2);
-    border-radius: 20px;
-}
-header article section .channels_bx::-webkit-scrollbar-thumb{
-    background: rgb(184,184,184,.7);
-    border-radius: 20px;
-}
-header article section .channels_bx .card_link{
-    width: 120px;
-    height: 160px;
-    margin-right: 16px;
-}
-header article section .channels_bx .card{
-    width: 100%;
-    height: 100%;
-}
-
-header article section .channels_bx .card img {
-    width: 100%;
-    border-radius: 5px;
-    height: 70%;
-}
-header article section .channels_bx .card .channel .content h6{
-    width: 100px;
+header article .profileName h6{
     color: #fff;
-    font-size: 12px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    margin-left: 5px;
+    font-size: 1.1rem;
 }
-header article section .channels_bx .card .channel .content p{
-    font-size: 10px;
-    margin-left: 5px;
-    color: var(--color-2);
+header article .followBtn{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+header article .followBtn button{
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    background: var(--color-6);
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+article nav .icon{
+    display: none;
+}
+header article .manageProfile {
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header article .manageProfile a {
+    text-decoration: none;
+    color: #fff;
+}
+/* ///testing */
+.file-upload form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0 0 0;
+}
+.file-upload form .send{
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    background: var(--color-6);
+    padding: 5px 10px;
+    border-radius: 20px;
+    width: 80px;
+}
+.file-upload form .file-upload-select-image {
+	display: block;
+	color: #dbdbdb;
+	cursor: pointer;
+	text-align: left;
+    background: var(--color-1);
+	overflow: hidden;
+	position: relative;
+	border-radius: 6px;
+    margin-bottom: 60px;
+    width: 60%;
+}
+.file-upload form .file-upload-select-image .file-select-button-image {
+	background: #161f27;
+	padding: 10px;
+	display: inline-block;
+}
+.file-upload form .file-upload-select-image .file-select-name-image {
+	display: inline-block;
+	padding: 10px;
+}
+.file-upload form .file-upload-select-image:hover .file-select-button-image {
+	background: #324759;
+	color: #ffffff;
+	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+}
+.file-upload form .file-upload-select-image input[type="file"] {
+	display: none;
+}
+
+/* //input cover */
+.file-upload form .file-upload-select-cover {
+	display: block;
+	color: #dbdbdb;
+	cursor: pointer;
+	text-align: left;
+    background: var(--color-1);
+	overflow: hidden;
+	position: relative;
+	border-radius: 6px;
+    margin-bottom: 60px;
+    width: 60%;
+}
+.file-upload form .file-upload-select-cover .file-select-button-cover {
+	background: #161f27;
+	padding: 10px;
+	display: inline-block;
+}
+.file-upload form .file-upload-select-cover .file-select-name-cover {
+	display: inline-block;
+	padding: 10px;
+}
+.file-upload form .file-upload-select-cover:hover .file-select-button-cover {
+	background: #324759;
+	color: #ffffff;
+	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+}
+.file-upload form .file-upload-select-cover input[type="file"] {
+	display: none;
+}
+
+
+
+/* ///end  */
+@media only screen and (min-width:0px) and (max-width:860px){
+    header aside{
+        display: none;
+    }
+    .file-upload form .file-upload-select {
+        width: 80%;
+    }
 }
 
 @media only screen and (min-width:0px) and (max-width:1146px){
@@ -453,9 +461,6 @@ header article section .channels_bx .card .channel .content p{
         margin: 0;
     }
 
-    aside{
-        display: none;
-    }
     header{
         width: 100vw;
         height: 100%;
@@ -469,30 +474,14 @@ header article section .channels_bx .card .channel .content p{
     header article nav{
         width: 85%;
     }
-    header article section{
-        height: 65%;
-    }
     header article nav .search input {
         width: 80%;
     }
     header article nav .search {
-        width: 55%;
-    }
-    header article section .channels_bx {
-        width: 100%;
-        height: 100%;
-    }
-    header article section .channels_bx .card_link{
-        width: 40%;
-        height: 140px;
-    }
-    header article section .channels_bx .card{
-        width: 100%;
-        height: 100%;
+        width: 58%;
     }
 
 }
-
 @media only screen and (min-width:800px) and (max-width:1146px){
     header article nav{
         width: 100%;
@@ -501,24 +490,10 @@ header article section .channels_bx .card .channel .content p{
         width: 30%;
     }
 
-    
-    header article section .channels_bx .card_link {
-        width: 30%;
-        height: 140px;
-    }
-
 }
 @media only screen and (min-width:450px) and (max-width:800px){
     header article nav .search {
         width: 38%;
-    }
-    header article section .channels_bx .card_link {
-        width: 20%;
-        height: 140px;
-    }
-    header article section .channels_bx {
-        width: 100%;
-        height: 70%;
     }
     
 }
@@ -532,13 +507,7 @@ header article section .channels_bx .card .channel .content p{
     body{
         overflow: auto;
     }
-    header article section{
-        height: 63.8%;
-    }
-    header article section .channels_bx {
-        width: 100%;
-        height: 50%;
-    }
+
 }
 @media only screen and (min-width:1000px) and (max-width:1146px){
     *{
@@ -546,48 +515,77 @@ header article section .channels_bx .card .channel .content p{
         margin: 0;
     }
 
-    aside{
-        display: none;
-    }
     header{
         width: 100vw;
         height: 100%;
         padding: 0;
         margin: 0;
     }
-    header aside,article{
+    header article{
         width: 100%;
         height: 100%;
+    }
+    header aside{
+        width: 22%;
     }
     header article nav{
         width: 100%;
     }
+
     header article nav .search input {
         width: 80%;
     }
     header article nav .search {
         width: 30%;
     }
-    header article section .channels_bx {
-        width: 100%;
-        height: 100%;
-    }
-    header article section .channels_bx .card_link {
-        width: 23%;
-        height: 190px;
-    }
+
 }
-@media only screen and (min-width:0px) and (max-width:340px){
+@media only screen and (min-width:0px) and (max-width:450px){
     header article nav .search {
         width: 60%;
     }
     header article nav .right_bx p {
         font-size: 12px;
     }
+    header article .manageProfile{
+        width: 100%;
+        height: 50px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
 
-}
-@media only screen and (min-width:0px) and (max-width:420px){
-    header article section {
-        height: 50%;
     }
+    header article .manageProfile a{ 
+        text-decoration: none;
+        color: #fff;
+    }
+    header article .profileImage {
+        position: absolute;
+        top: 270px;
+
+    }
+    header article .profileCover .cover {
+        height: 80%;
+        width: 80%;
+    }
+    nav .icone a img{
+        width: 40px;
+        height: 30px;
+        margin-top: 10px;
+    }
+    header article nav .search {
+        width: 50%;
+    }
+    header article nav .right_bx .username .usrname{
+        display: none;
+    }
+    header article nav .right_bx {
+        padding-left: 60px;
+    }
+    header article nav .right_bx .logout{
+        margin-left: 10px;
+    }
+    
 }
+
